@@ -9,6 +9,10 @@ invoked and verified end-to-end; nightly EventBridge automation was deliberately
 not enabled (see "Known limitations" below).
 
 ## Results
+![MAE across feature engineering experiments]
+
+<img width="1350" height="825" alt="mae_experiment_results" src="https://github.com/user-attachments/assets/88b1b6ca-8201-4c1b-a05e-22a1b3ef0e9e" />
+
 
 - **Mean Absolute Error: $46.66** (~12.4% of average fare) on a held-out test
   set of 18,992 real historical flights the model never saw during training.
