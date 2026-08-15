@@ -67,7 +67,6 @@ Amazon EventBridge was designed but intentionally not enabled -- see below.
 - **ML**: Python, Pandas, scikit-learn (RandomForestRegressor)
 - **Deployment**: Docker, AWS Lambda (container images), Amazon ECR
 - **Storage**: Amazon S3 (model artifacts), Amazon DynamoDB (predictions)
-- **Automation**: Amazon EventBridge (scheduled nightly trigger)
 - **IAM**: least-privilege access policies scoped per service
 
 ## Project structure
