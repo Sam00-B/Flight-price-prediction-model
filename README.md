@@ -34,6 +34,17 @@ not enabled (see "Known limitations" below).
 *The cabin_coach and cabin_first features (highlighted) were added after error
 analysis on the worst-performing predictions revealed the model had no way to
 distinguish premium-cabin fares from coach — see "Results" above.*
+## Reproduce these results
+
+Clone this repo, install dependencies, then run:
+
+```bash
+pip install -r requirements.txt
+python train_model.py
+```
+
+This trains on `clean_flight_data.csv` (included in this repo) and should
+print `Mean Absolute Error: $46.66` on the held-out test set.
 
 ## Proof of deployment
 <img width="1568" height="705" alt="image" src="https://github.com/user-attachments/assets/3d58bcca-27b6-45ea-80be-dc60b423d982" />
