@@ -1,0 +1,16 @@
+# Large model files -- too big for GitHub, regenerate via 02_train_model.py
+# or download from S3 (see README)
+*.joblib
+clean_flight_data.csv
+itineraries-min-100k.csv
+ 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+ 
+# AWS / secrets -- never commit these
+.aws/
+*.pem
+*credentials*
