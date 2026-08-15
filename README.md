@@ -29,6 +29,11 @@ not enabled (see "Known limitations" below).
   fares) and revealed a known limitation: absolute price levels reflect 2022
   training data and underpredict on some routes relative to 2026 fares,
   consistent with airfare inflation the model was never trained to account for.
+![Feature importances](feature_importances.png)
+
+*The cabin_coach and cabin_first features (highlighted) were added after error
+analysis on the worst-performing predictions revealed the model had no way to
+distinguish premium-cabin fares from coach — see "Results" above.*
 
 ## Architecture
 
