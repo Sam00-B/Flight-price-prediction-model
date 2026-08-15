@@ -35,6 +35,14 @@ not enabled (see "Known limitations" below).
 analysis on the worst-performing predictions revealed the model had no way to
 distinguish premium-cabin fares from coach — see "Results" above.*
 
+## Proof of deployment
+<img width="1568" height="705" alt="image" src="https://github.com/user-attachments/assets/3d58bcca-27b6-45ea-80be-dc60b423d982" />
+<img width="1512" height="809" alt="image" src="https://github.com/user-attachments/assets/929e6c9a-42c8-4c35-ac08-307a8ec3293b" />
+<img width="1568" height="636" alt="image" src="https://github.com/user-attachments/assets/07b39bbe-b2c1-4eb9-92b0-c9341573193a" />
+
+
+
+
 ## Architecture
 
 ```
