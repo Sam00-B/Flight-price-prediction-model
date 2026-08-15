@@ -9,7 +9,7 @@ invoked and verified end-to-end; nightly EventBridge automation was deliberately
 not enabled (see "Known limitations" below).
 
 ## Results
-![MAE across feature engineering experiments]
+
 
 <img width="1350" height="825" alt="mae_experiment_results" src="https://github.com/user-attachments/assets/88b1b6ca-8201-4c1b-a05e-22a1b3ef0e9e" />
 
@@ -73,10 +73,10 @@ Amazon EventBridge was designed but intentionally not enabled -- see below.
 ## Project structure
 
 ```
-01_clean_and_features.py       # Data cleaning + feature engineering
-02_train_model.py              # Train/evaluate RandomForestRegressor
-03_validate_deployment.py      # Verifies deployed model matches training MAE
-04_compare_local_vs_deployed.py# Verifies Lambda output matches local output
+clean.py                       # Data cleaning + feature engineering
+train_model.py                 # Train/evaluate RandomForestRegressor
+03_validate_deployment.py      # Verifies deployed model matches training MAE,
+                                # and Lambda output matches local output
 lambda_function.py             # Lambda handler: predict + write to DynamoDB
 Dockerfile                     # Lambda container image definition
 requirements.txt               # Python dependencies
