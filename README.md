@@ -12,6 +12,7 @@ not enabled (see "Known limitations" below).
 
 
 <img width="1350" height="825" alt="mae_experiment_results" src="https://github.com/user-attachments/assets/88b1b6ca-8201-4c1b-a05e-22a1b3ef0e9e" />
+Independently reproduced on Kaggle: [View notebook](https://www.kaggle.com/code/saumikbarua00/flight-pricing-model) — $46.67 MAE on a fresh environment
 
 
 - **Mean Absolute Error: $46.66** (~12.4% of average fare) on a held-out test
