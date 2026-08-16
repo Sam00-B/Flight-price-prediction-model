@@ -11,7 +11,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # ---------------------------------------------------------------
-# CONFIG: names of your actual AWS resources.
+# CONFIG: names of  actual AWS resources.
 # ---------------------------------------------------------------
 S3_BUCKET = "saumik-flight-pricing-model"
 MODEL_KEY = "flight_price_model.joblib"

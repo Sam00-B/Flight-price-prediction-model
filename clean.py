@@ -11,7 +11,7 @@ print(f"Loaded {len(df):,} rows")
  
 # ---------------------------------------------------------------
 # 2. ENGINEER THE "BOOKING VELOCITY" FEATURE
-# We have searchDate (when the customer searched) and flightDate
+#  have searchDate (when the customer searched) and flightDate
 # (when the flight departs). The gap between them is exactly the
 # "how far out is this booking" signal from the hotel project.
 # ---------------------------------------------------------------

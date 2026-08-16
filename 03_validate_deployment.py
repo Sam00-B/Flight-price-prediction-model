@@ -3,10 +3,10 @@ Validate the DEPLOYED pipeline against real historical data.
 
 Goal: reload the exact same held-out test set from training, run it through
 the SAME feature-prep logic the Lambda function uses (get_dummies + reindex),
-and confirm MAE matches what we saw during training ($46.66).
+and confirm MAE matches what  seen during training ($46.66).
 
 This proves the deployment (S3 -> Lambda -> reindex -> predict) is faithful
-to the model we actually evaluated -- not testing the model itself again,
+to the model  actually evaluated -- not testing the model itself again,
 testing that nothing broke in translation to production.
 """
 import pandas as pd
@@ -21,14 +21,14 @@ df = pd.read_csv("clean_flight_data.csv")
 
 # ---------------------------------------------------------------
 # 2. Recreate the EXACT same train/test split.
-# Same random_state=42 means we get back the identical 18,992 test rows
+# Same random_state=42 means  get back the identical 18,992 test rows
 # your original 02_train_model.py evaluated against.
 # ---------------------------------------------------------------
 train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
 
 print(f"Recovered {len(test_df):,} test rows (should match original test set size)")
 
-# Keep the real prices aside before we touch features.
+# Keep the real prices aside before  touch features.
 actual_prices = test_df["totalFare"].values
 test_features_raw = test_df.drop(columns=["totalFare"])
 
